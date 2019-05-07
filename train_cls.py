@@ -1,4 +1,3 @@
-
 import numpy as np
 import torch
 from torch.backends import cudnn
@@ -142,5 +141,8 @@ if __name__ == '__main__':
         else:
             validate(model, val_data_loader)
             timer.reset_stage()
+
+        
+        torch.save(model.module.state_dict(), '{}_{}.pth'.format(args.session_name, ep))
 
     torch.save(model.module.state_dict(), args.session_name + '.pth')

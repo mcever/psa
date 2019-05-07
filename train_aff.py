@@ -140,4 +140,6 @@ if __name__ == '__main__':
             print('')
             timer.reset_stage()
 
+        torch.save(model.module.state_dict(), args.session_name + '{}_{}.pth'.format(args.session_name, ep))
+
     torch.save(model.module.state_dict(), args.session_name + '.pth')
