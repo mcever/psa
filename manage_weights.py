@@ -48,7 +48,7 @@ while 1:
     val_out = subprocess.check_output(cmd, stderr=subprocess.STDOUT, shell=True)
     end = time.time()
     print(end)
-    print('elapsed: {}'.format(end - start)
+    print('elapsed: {}'.format(end - start))
 
     # then compute miou
     gt_path = '/mnt/nfs/vader_ssd1_austin/datasets/VOC/VOCdevkit/VOC2012/AugSegClass'
