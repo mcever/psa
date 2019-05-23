@@ -1,4 +1,4 @@
-# for plotting output pickle of manage_weights.py
+# for plotting  output pickle of manage_weights.py
 
 import pickle
 import matplotlib.pyplot as plt
