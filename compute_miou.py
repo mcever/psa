@@ -33,7 +33,7 @@ def compute_miou(gt_path, pred_path):
 
 if __name__ == "__main__":
 
-    VOC_HOME = '/media/ssd1/austin/datasets/VOC/VOCdevkit/VOC2012/AugSegClass'
+    VOC_HOME = '/media/ssd1/austin/datasets/VOC/VOCdevkit/VOC2012/AugSegClass255'
 
     parser = argparse.ArgumentParser()
     parser.add_argument("--gt_path", default=VOC_HOME, type=str)

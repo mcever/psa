@@ -47,6 +47,7 @@ if __name__ == '__main__':
     infer_data_loader = DataLoader(infer_dataset, shuffle=False, num_workers=args.num_workers, pin_memory=True)
 
     n_gpus = torch.cuda.device_count()
+    n_gpus = 2
     model_replicas = torch.nn.parallel.replicate(model, list(range(n_gpus)))
 
     for iter, (img_name, img_list, label) in enumerate(infer_data_loader):
